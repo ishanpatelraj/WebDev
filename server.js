@@ -1,11 +1,12 @@
 const express = require("express");
 const db = require("./db");
+require('dotenv').config();
 // import the Person model
 const Person = require("./models/Person");
 const MenuItem = require("./models/MenuItem")
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // middleware to read JSON
 app.use(express.json());
