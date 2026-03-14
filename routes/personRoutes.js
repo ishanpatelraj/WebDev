@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const Person = require('../models/Person');
-const { model } = require('mongoose');
 
 // Create a new person
 router.get('/:workType', async (req, res) => {
